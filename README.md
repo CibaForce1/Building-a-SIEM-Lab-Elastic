@@ -235,6 +235,6 @@ Considering the event was a test and no further compromising actions were carrie
 ![image](https://github.com/user-attachments/assets/eaba70b0-2669-457b-aaa2-d498fc92941d)
 
 
-**Conclusion**
+## Conclusion
 
 In this project, we successfully set up a Security Information and Event Management (SIEM) lab using Elastic. We configured an Elastic Agent on a Kali Linux virtual machine to generate and monitor security events. Through this process, we created visualization dashboards for better analysis and set up custom alerts to detect suspicious activities in real-time. Additionally, we utilized and tested pre-existing alert rules to simulate real-world scenarios and understand the response mechanisms available within Elastic. This comprehensive exercise has provided valuable insights into the capabilities of SIEM solutions and their critical role in maintaining robust cybersecurity defences.
