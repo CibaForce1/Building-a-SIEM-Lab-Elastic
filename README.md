@@ -24,9 +24,11 @@ The objective of this project was to create a Security Information and Event Man
 
 ## Steps
 Part 1: Setup and Configuration
+
 Here, we will create an Elastic account, configure an Elastic Agent via a Kali Linux VM to collect logs, generate security events on the Kali VM, query these security events in Elastic, create a dashboard for visualization, and set up an alert.
 
 Part 2: Utilizing Pre-existing Alert Rules
+
 In the second part, we will utilize pre-existing alert rules on Elastic. We will assign the alerts to the created Agent and work on resolving the alerts.
 
 PS. both VMware & Kali Linux VM were installed and used in previous projects; i. Incident response
@@ -191,6 +193,7 @@ To achieve this, we re-run the same Nmap commands as initiated at the beginning 
 
 
 **Part 2: Utilizing Pre-existing Alert Rules**
+
 In the first part, we tested and configured a new rule. In this section, we will trigger events with a pre-installed custom rule and attempt to resolve them on Elastic.
 
 To achieve this, the following steps were carried out:
