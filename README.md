@@ -31,12 +31,16 @@ Part 2: Utilizing Pre-existing Alert Rules
 
 In the second part, we will utilize pre-existing alert rules on Elastic. We will assign the alerts to the created Agent and work on resolving the alerts.
 
-PS. both VMware & Kali Linux VM were installed and used in previous projects; i. Incident response
+PS. both VMware & Kali Linux VM were installed and used in previous projects; 
+
+i. Incident response
+
 ii. Vulnerability assessment
 
 **Part 1: Setup and Configuration**
 
 Step 1: Creating an Elastic Account
+
 - To achieve this, we simply sign up on the Elastic Cloud registration website for a free/trial account using the link below:
 
 https://cloud.elastic.co/registration
@@ -106,9 +110,12 @@ sudo nmap -p- localhost
 Step 4: Viewing Security Events in Elastic
 
 To view the security events generated on Elastic from the commands we’ve run, we follow these steps:
+
 - On Elastic we select “Logs” from the hamburger menu
+  
 - Click on “Stream” and from the search using the query,
 process.args: “nmap”
+
 - We then open the search result and view the security events generated.
 
 ![image](https://github.com/user-attachments/assets/116bb9c4-e4c3-4c0b-a7ee-57f1629a149d)
@@ -120,9 +127,11 @@ process.args: “nmap”
 
 
 Step 5: Create a Dashboard for Visualization
+
 Visualization dashboards provide better analysis of event logs and suspicious patterns identified in our SIEM, which helps in making informed decisions.
 
 To create a dashboard, we follow these steps:
+
 - Under the analytics menu, we select “Dashboards” and then “Create dashboard.”
 
 ![image](https://github.com/user-attachments/assets/b4d86d20-7a04-4d3d-90a8-0e6a77625da9)
@@ -143,6 +152,7 @@ Step 6: Setting up an Alert
 Setting up an alert is crucial for detecting suspicious events, as it provides timely notifications based on predefined rules or custom queries, giving us ample time to prevent potential security incidents.
 
 To set up an alert, we follow these steps:
+
 - We navigate back to the Elastic home screen and select “Security.”
 
 ![image](https://github.com/user-attachments/assets/a5e67320-3da1-4176-93f9-a3784b298832)
@@ -197,6 +207,7 @@ To achieve this, we re-run the same Nmap commands as initiated at the beginning 
 In the first part, we tested and configured a new rule. In this section, we will trigger events with a pre-installed custom rule and attempt to resolve them on Elastic.
 
 To achieve this, the following steps were carried out:
+
 Step 1: Identify the specific custom rule to trigger.
 
 As there are over 1000 custom rules embedded into Elastic, a quick search for the term “hack” was initiated, revealing the rule “Potential Linux Hack Tool Launched.”
@@ -218,7 +229,6 @@ As captured below, John the Ripper and Hydra (both hacking tools used in passwor
 When we return to the Alerts tab on Elastic, we see that 5 alerts have been generated based on our actions.
 
 ![image](https://github.com/user-attachments/assets/cb777b4f-29d4-4e60-9737-60a81e598ca9)
-![image](https://github.com/user-attachments/assets/62f1841c-bb1c-4fbd-b989-2a1acb57e77b)
 
 Step 3: Under the “Actions” section, we can “view details” on the alert, “investigate in timeline” of the event, “analyse event,” “open session view,” and resolve the alert.
 
